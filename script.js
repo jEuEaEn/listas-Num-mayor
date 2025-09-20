@@ -1,5 +1,6 @@
 let ent = document.getElementById("enrrada")
 const contenido = document.getElementById("o")
+const fo = document.getElementById("in")
 
 let lista = []
 
@@ -21,28 +22,29 @@ function agregarListado(){
 
 function actualizar(){
     
-    // let mayor = Math.max(lista.values)
-
+    
     let rada = parseInt(ent.value)
-
+    
     if(isNaN(rada) == false){
 
+        
         lista.push(rada)
         agregarListado()
         ent.value = ""
         console.log(lista)
+        let mayor = Math.max(...lista)
+        console.log(mayor)
+        fo.textContent = " El numero mallor es "+ mayor 
+        
 
 
     }
-
-
 
 }
 
 /*
 
-El error principal es que usas htmlRsultante = htmlRsultante <span>...</span> en vez de concatenar correctamente, y también llamas 
-a ActualizarListado() que no existe (debería ser agregarListado()), además de que intentas acceder a lista.value que no existe.
+
 
 */
 

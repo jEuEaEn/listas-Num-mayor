@@ -1,0 +1,67 @@
+html{
+
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+main{
+
+    display: flex;
+    justify-content: center;
+    align-items: column;
+    flex-direction: column;
+    background-color: white;
+    min-width: 300px;
+    min-height: 200px;
+    border-radius: 20px;
+
+}
+
+.Entrada{
+
+    margin-left: 30px;
+    border: 1px solid White;
+    border-bottom: 1px solid black;
+    outline: none;
+
+}
+
+.Boton{
+
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+.output_1{
+
+    background-color: rgb(74, 116, 255);
+
+}
+
+section{
+
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    background-color: rgba(116, 117, 148, 0.527);
+    min-width: 100px;
+    min-height: 10px;
+    margin-top: 10px;
+
+    
+}
+
+span{
+
+    margin: 10px;
+    background-color: rgb(33, 122, 199);
+    padding: 10px;
+    border-radius: 10px;
+
+}
